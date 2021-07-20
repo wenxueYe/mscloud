@@ -12,6 +12,8 @@
         <module>cloud-consumer-order8080</module>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
+        <module>cloud-eureka-server7002</module>
+        <module>cloud-provider-payment8002</module>
     </modules>
     <!--pom 项目里没有java代码，也不执行任何代码，只是为了聚合工程或传递依赖用的。-->
     <packaging>pom</packaging>

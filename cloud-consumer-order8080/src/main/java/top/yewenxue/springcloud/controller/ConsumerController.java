@@ -15,7 +15,10 @@ import top.yewenxue.springcloud.entities.Payment;
 public class ConsumerController
 {
 
-    public static final String PaymentSrv_URL = "http://localhost:8001";
+    //订单服务访问地址不能写死
+    //public static final String PaymentSrv_URL = "http://localhost:8001";
+    // 通过在eureka上注册过的微服务名称调用
+    public static final String PAYMENT_SRV = "http://CLOUD-PAYMENT-SERVICE";
 
     @Autowired
     private RestTemplate restTemplate;
@@ -24,7 +27,7 @@ public class ConsumerController
     public CommonResult create(Payment payment)
     {
         log.info("create...consumer");
-        return restTemplate.postForObject(PaymentSrv_URL + "/payment/create",payment,CommonResult.class);//发一个post请求
+        return restTemplate.postForObject(PAYMENT_SRV + "/payment/create",payment,CommonResult.class);//发一个post请求
     }
 
 
@@ -32,6 +35,10 @@ public class ConsumerController
     public CommonResult getPayment(@PathVariable Long id)
     {
         log.info("get...consumer");
-        return restTemplate.getForObject(PaymentSrv_URL + "/payment/get/"+id, CommonResult.class, id);
+        /*
+        *
+        * */
+        //return restTemplate.getForObject(PAYMENT_SRV + "/payment/get/"+id, CommonResult.class, id);
+        return restTemplate.getForObject(PAYMENT_SRV + "/payment/get/"+id, CommonResult.class);
     }
 }
