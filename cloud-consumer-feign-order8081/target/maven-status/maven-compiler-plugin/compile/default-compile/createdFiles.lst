@@ -1,0 +1,4 @@
+top\yewenxue\springcloud\controller\OrderFeignController.class
+top\yewenxue\springcloud\cfgbeans\FeignConfig.class
+top\yewenxue\springcloud\ConsumerFeignMain8081.class
+top\yewenxue\springcloud\service\PaymentFeignService.class

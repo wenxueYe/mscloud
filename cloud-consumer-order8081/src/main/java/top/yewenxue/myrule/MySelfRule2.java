@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MySelfRule {
+public class MySelfRule2 {
     @Bean
     public IRule MySelfRule() {
         return new RandomRule();

@@ -16,6 +16,9 @@
         <module>cloud-provider-payment8002</module>
         <module>cloud-consumer-feign-order8081</module>
         <module>cloud-consumer-order8081</module>
+        <module>cloud-provider-hystrix-payment8001</module>
+        <module>cloud-consumer-feign-hystrix-order8080</module>
+        <module>cloud-consumer-hystrix-dashboard9001</module>
     </modules>
     <!--pom 项目里没有java代码，也不执行任何代码，只是为了聚合工程或传递依赖用的。-->
     <packaging>pom</packaging>
