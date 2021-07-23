@@ -11,18 +11,16 @@
         <module name="cloud-consumer-feign-hystrix-order8080" />
         <module name="cloud-consumer-feign-order8081" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-consumer-order8080" />
         <module name="cloud-consumer-order8081" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-provider-payment8001" />
         <module name="cloud-provider-payment8002" />
-      </profile>
-      <profile name="Annotation profile for mscloud" enabled="true">
-        <sourceOutputDir name="../cloud-consumer-order8081/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../cloud-consumer-order8081/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="cloud-consumer-order8080" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
+        <module name="cloudalibaba-provider-payment9001" />
+        <module name="cloudalibaba-provider-payment9002" />
       </profile>
     </annotationProcessing>
   </component>
